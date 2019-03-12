@@ -1,0 +1,21 @@
+#!/bin/bash
+
+free -h | tee -a Config_test.txt
+
+#sudo parted -l | tee -a Config_test.txt
+
+df | tee -a Config_test.txt
+
+lsscsi | tee -a Config_test.txt
+
+#uname -a | tee -a Config_test.txt 
+
+#lsb_release -a | tee -a Config_test.txt
+
+screenfetch | tee -a Config_test.txt
+
+nmap localhost | tee -a Config_test.txt
+
+wget -O - -q icanhazip.com | tee -a Config_test.txt
+
+sync
